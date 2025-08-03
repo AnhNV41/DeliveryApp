@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DeliveryApp.Helper;assembly=DeliveryApp"
+             x:Class="DeliveryApp.Views.RecentPage">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Frame Padding="10" Grid.Column="0" VerticalOptions="Center" HeightRequest="20" WidthRequest="10" CornerRadius="10" BackgroundColor="#EAECEE">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding BackCommand}"/>
+                        </Frame.GestureRecognizers>
+                        <Image Source="{local:ImageResource DeliveryApp.Resource.arrow-left.png}"/>
+                    </Frame>
+                    <Label Grid.Column="1" Text="Recent Order" FontAttributes="Bold" FontSize="25" VerticalOptions="Center" HorizontalOptions="Center"/>
+                </Grid>
+                <CollectionView Grid.Row="1" 
+                        ItemsSource="{Binding CartOrderItems}"
+                        SelectionChangedCommand="{Binding TapCommand}"
+                        SelectionChangedCommandParameter="{Binding SelectedItem}"
+                        SelectedItem="{Binding SelectedItem}" 
+                        SelectionMode="Single">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10">
+                                <Frame CornerRadius="20" 
+                                   BackgroundColor="#F0F3F4"
+                                   HeightRequest="150" >
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout>
+                                                <Label Text="{Binding Price}" FontAttributes="Bold" FontSize="18"/>
+                                                <Label Text="{Binding Time}"/>
+                                            </StackLayout>
+                                            <StackLayout Grid.Column="1" HorizontalOptions="End">
+                                                <Label Text="7 items, 2.41kg"/>
+                                            </StackLayout>
+                                        </Grid>
+                                        <CollectionView ItemsSource="{Binding OrderItems}" 
+                                                    Grid.Row="1"   
+                                                    SelectionMode="Single"
+                                                    HorizontalScrollBarVisibility="Never"
+                                                    VerticalScrollBarVisibility="Never">
+                                            <CollectionView.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Grid Margin="15,0,0,0">
+                                                        <Frame Padding="0" IsClippedToBounds="True" WidthRequest="70" HeightRequest="100" BackgroundColor="White" HorizontalOptions="Center" CornerRadius="10">
+                                                            <Image Source="{Binding ImageSource}" HorizontalOptions="Center" VerticalOptions="Center"/>
+                                                        </Frame>
+                                                    </Grid>
+                                                </DataTemplate>
+                                            </CollectionView.ItemTemplate>
+                                            <CollectionView.ItemsLayout>
+                                                <GridItemsLayout Orientation="Horizontal"
+                                                             Span="1" />
+                                            </CollectionView.ItemsLayout>
+                                        </CollectionView>
+                                    </Grid>
+                                </Frame>
+
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </ScrollView>
+        <Frame HeightRequest="100" BackgroundColor="White">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0"  Source="{local:ImageResource DeliveryApp.Resource.home.png}"    HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" Opacity="0.25"/>
+                <Image Grid.Column="1" Source="{local:ImageResource DeliveryApp.Resource.grid.png}"    HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" Opacity="0.25"/>
+                <Frame Grid.Column="2" Padding="5" CornerRadius="10" BackgroundColor="#7DB408">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding CartTapCommand}"/>
+                    </Frame.GestureRecognizers>
+                    <Image  Source="{local:ImageResource DeliveryApp.Resource.shopping-cart.png}"   HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" Opacity="0.25"/>
+                </Frame>
+                <Image Grid.Column="3" Source="{local:ImageResource DeliveryApp.Resource.love.png}"    HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" Opacity="0.25"/>
+                <Image Grid.Column="4" Source="{local:ImageResource DeliveryApp.Resource.user.png}"    HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="30" Opacity="0.25"/>
+            </Grid>
+        </Frame>
+    </StackLayout>
+</ContentPage>

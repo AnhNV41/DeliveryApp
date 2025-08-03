@@ -1,0 +1,1 @@
+D:\Users\tthn\source\repos\DeliveryApp\DeliveryApp.UWP\DeliveryApp.UWP.csproj;x86

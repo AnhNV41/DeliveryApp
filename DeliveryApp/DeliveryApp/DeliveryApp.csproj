@@ -1,0 +1,241 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\3-2-coffee-beans-free-png-image.png" />
+    <None Remove="Resource\5-chocolate-png-image_800x800.png" />
+    <None Remove="Resource\6-chocolate-png-image_800x800.png" />
+    <None Remove="Resource\7-2-chocolate-png-8_800x800.png" />
+    <None Remove="Resource\8-chocolate-png-image_800x800.png" />
+    <None Remove="Resource\apple.png" />
+    <None Remove="Resource\apple1.png" />
+    <None Remove="Resource\apple2.png" />
+    <None Remove="Resource\arla.png" />
+    <None Remove="Resource\arrow-left.png" />
+    <None Remove="Resource\black search.png" />
+    <None Remove="Resource\blacksearch.png" />
+    <None Remove="Resource\broccoli.png" />
+    <None Remove="Resource\broccoli1.png" />
+    <None Remove="Resource\bunge.jpg" />
+    <None Remove="Resource\candy.png" />
+    <None Remove="Resource\candy1.png" />
+    <None Remove="Resource\candy3.png" />
+    <None Remove="Resource\carlsberg.png" />
+    <None Remove="Resource\cba.png" />
+    <None Remove="Resource\chocolate.png" />
+    <None Remove="Resource\chocolate1.png" />
+    <None Remove="Resource\chocolate2.png" />
+    <None Remove="Resource\chocolate3.png" />
+    <None Remove="Resource\circlek.png" />
+    <None Remove="Resource\cocacola.png" />
+    <None Remove="Resource\costco.png" />
+    <None Remove="Resource\danishcrown.png" />
+    <None Remove="Resource\danone.png" />
+    <None Remove="Resource\dean.png" />
+    <None Remove="Resource\diageo.png" />
+    <None Remove="Resource\drink.png" />
+    <None Remove="Resource\drink1.png" />
+    <None Remove="Resource\drink2.png" />
+    <None Remove="Resource\drink3.png" />
+    <None Remove="Resource\drink4.png" />
+    <None Remove="Resource\drink5.png" />
+    <None Remove="Resource\drink6.png" />
+    <None Remove="Resource\drink7.png" />
+    <None Remove="Resource\drink8.png" />
+    <None Remove="Resource\expand_arrow.png" />
+    <None Remove="Resource\filter.png" />
+    <None Remove="Resource\fontera.png" />
+    <None Remove="Resource\food.png" />
+    <None Remove="Resource\fruits.png" />
+    <None Remove="Resource\fruits1.png" />
+    <None Remove="Resource\fruits2.png" />
+    <None Remove="Resource\fruits3.png" />
+    <None Remove="Resource\grape.png" />
+    <None Remove="Resource\grape1.png" />
+    <None Remove="Resource\grape2.png" />
+    <None Remove="Resource\grid.png" />
+    <None Remove="Resource\heart.png" />
+    <None Remove="Resource\home.png" />
+    <None Remove="Resource\hormel.jpg" />
+    <None Remove="Resource\ingredion.png" />
+    <None Remove="Resource\kfc.png" />
+    <None Remove="Resource\love.png" />
+    <None Remove="Resource\mango.png" />
+    <None Remove="Resource\mango1.png" />
+    <None Remove="Resource\mango2.png" />
+    <None Remove="Resource\meiji.png" />
+    <None Remove="Resource\menu.png" />
+    <None Remove="Resource\nestle.png" />
+    <None Remove="Resource\nhfoods.png" />
+    <None Remove="Resource\notification.png" />
+    <None Remove="Resource\osi.png" />
+    <None Remove="Resource\pepper.png" />
+    <None Remove="Resource\pepsico.jpg" />
+    <None Remove="Resource\pernod recard.png" />
+    <None Remove="Resource\plus.png" />
+    <None Remove="Resource\pngegg.png" />
+    <None Remove="Resource\pngwing.com.png" />
+    <None Remove="Resource\redbull.jpg" />
+    <None Remove="Resource\right.png" />
+    <None Remove="Resource\rose.png" />
+    <None Remove="Resource\sapporo.jpeg" />
+    <None Remove="Resource\search.png" />
+    <None Remove="Resource\shoes.png" />
+    <None Remove="Resource\shoes1.png" />
+    <None Remove="Resource\shoes2.png" />
+    <None Remove="Resource\shoes3.png" />
+    <None Remove="Resource\shopping-cart.png" />
+    <None Remove="Resource\simplot.png" />
+    <None Remove="Resource\sport.png" />
+    <None Remove="Resource\sport1.png" />
+    <None Remove="Resource\sport2.png" />
+    <None Remove="Resource\subtract.png" />
+    <None Remove="Resource\thaibev.jpg" />
+    <None Remove="Resource\tomato.png" />
+    <None Remove="Resource\trash.png" />
+    <None Remove="Resource\tsingtao.png" />
+    <None Remove="Resource\unilever.jpg" />
+    <None Remove="Resource\user.png" />
+    <None Remove="Resource\vagetables2.png" />
+    <None Remove="Resource\vegetables.png" />
+    <None Remove="Resource\vegetables1.png" />
+    <None Remove="Resource\vegetables3.png" />
+    <None Remove="Resource\vegetables4.png" />
+    <None Remove="Resource\vegetables5.png" />
+    <None Remove="Resource\vion.jpg" />
+    <None Remove="Resource\white-shopping-cart-96.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\apple.png" />
+    <EmbeddedResource Include="Resource\apple1.png" />
+    <EmbeddedResource Include="Resource\apple2.png" />
+    <EmbeddedResource Include="Resource\arla.png" />
+    <EmbeddedResource Include="Resource\broccoli.png" />
+    <EmbeddedResource Include="Resource\broccoli1.png" />
+    <EmbeddedResource Include="Resource\bunge.jpg" />
+    <EmbeddedResource Include="Resource\carlsberg.png" />
+    <EmbeddedResource Include="Resource\chocolate.png" />
+    <EmbeddedResource Include="Resource\chocolate1.png" />
+    <EmbeddedResource Include="Resource\chocolate2.png" />
+    <EmbeddedResource Include="Resource\chocolate3.png" />
+    <EmbeddedResource Include="Resource\circlek.png" />
+    <EmbeddedResource Include="Resource\cocacola.png" />
+    <EmbeddedResource Include="Resource\danishcrown.png" />
+    <EmbeddedResource Include="Resource\danone.png" />
+    <EmbeddedResource Include="Resource\dean.png" />
+    <EmbeddedResource Include="Resource\diageo.png" />
+    <EmbeddedResource Include="Resource\drink1.png" />
+    <EmbeddedResource Include="Resource\candy.png" />
+    <EmbeddedResource Include="Resource\drink.png" />
+    <EmbeddedResource Include="Resource\drink2.png" />
+    <EmbeddedResource Include="Resource\candy1.png" />
+    <EmbeddedResource Include="Resource\drink3.png" />
+    <EmbeddedResource Include="Resource\drink4.png" />
+    <EmbeddedResource Include="Resource\candy3.png" />
+    <EmbeddedResource Include="Resource\fontera.png" />
+    <EmbeddedResource Include="Resource\food.png" />
+    <EmbeddedResource Include="Resource\drink5.png" />
+    <EmbeddedResource Include="Resource\drink6.png" />
+    <EmbeddedResource Include="Resource\drink8.png" />
+    <EmbeddedResource Include="Resource\drink7.png" />
+    <EmbeddedResource Include="Resource\arrow-left.png" />
+    <EmbeddedResource Include="Resource\black search.png" />
+    <EmbeddedResource Include="Resource\blacksearch.png" />
+    <EmbeddedResource Include="Resource\cba.png" />
+    <EmbeddedResource Include="Resource\costco.png" />
+    <EmbeddedResource Include="Resource\expand_arrow.png" />
+    <EmbeddedResource Include="Resource\filter.png" />
+    <EmbeddedResource Include="Resource\fruits.png" />
+    <EmbeddedResource Include="Resource\fruits1.png" />
+    <EmbeddedResource Include="Resource\fruits2.png" />
+    <EmbeddedResource Include="Resource\fruits3.png" />
+    <EmbeddedResource Include="Resource\grape.png" />
+    <EmbeddedResource Include="Resource\grape1.png" />
+    <EmbeddedResource Include="Resource\grape2.png" />
+    <EmbeddedResource Include="Resource\grid.png" />
+    <EmbeddedResource Include="Resource\heart.png" />
+    <EmbeddedResource Include="Resource\home.png" />
+    <EmbeddedResource Include="Resource\hormel.jpg" />
+    <EmbeddedResource Include="Resource\ingredion.png" />
+    <EmbeddedResource Include="Resource\kfc.png" />
+    <EmbeddedResource Include="Resource\love.png" />
+    <EmbeddedResource Include="Resource\mango.png" />
+    <EmbeddedResource Include="Resource\mango1.png" />
+    <EmbeddedResource Include="Resource\mango2.png" />
+    <EmbeddedResource Include="Resource\meiji.png" />
+    <EmbeddedResource Include="Resource\menu.png" />
+    <EmbeddedResource Include="Resource\nestle.png" />
+    <EmbeddedResource Include="Resource\nhfoods.png" />
+    <EmbeddedResource Include="Resource\notification.png" />
+    <EmbeddedResource Include="Resource\osi.png" />
+    <EmbeddedResource Include="Resource\pepper.png" />
+    <EmbeddedResource Include="Resource\pepsico.jpg" />
+    <EmbeddedResource Include="Resource\pernod recard.png" />
+    <EmbeddedResource Include="Resource\plus.png" />
+    <EmbeddedResource Include="Resource\pngegg.png" />
+    <EmbeddedResource Include="Resource\pngwing.com.png" />
+    <EmbeddedResource Include="Resource\redbull.jpg" />
+    <EmbeddedResource Include="Resource\right.png" />
+    <EmbeddedResource Include="Resource\rose.png" />
+    <EmbeddedResource Include="Resource\sapporo.jpeg" />
+    <EmbeddedResource Include="Resource\search.png" />
+    <EmbeddedResource Include="Resource\shoes.png" />
+    <EmbeddedResource Include="Resource\shoes1.png" />
+    <EmbeddedResource Include="Resource\shoes2.png" />
+    <EmbeddedResource Include="Resource\shoes3.png" />
+    <EmbeddedResource Include="Resource\shopping-cart.png" />
+    <EmbeddedResource Include="Resource\simplot.png" />
+    <EmbeddedResource Include="Resource\sport.png" />
+    <EmbeddedResource Include="Resource\sport1.png" />
+    <EmbeddedResource Include="Resource\sport2.png" />
+    <EmbeddedResource Include="Resource\subtract.png" />
+    <EmbeddedResource Include="Resource\thaibev.jpg" />
+    <EmbeddedResource Include="Resource\tomato.png" />
+    <EmbeddedResource Include="Resource\trash.png" />
+    <EmbeddedResource Include="Resource\tsingtao.png" />
+    <EmbeddedResource Include="Resource\unilever.jpg" />
+    <EmbeddedResource Include="Resource\user.png" />
+    <EmbeddedResource Include="Resource\vagetables2.png" />
+    <EmbeddedResource Include="Resource\vegetables.png" />
+    <EmbeddedResource Include="Resource\vegetables1.png" />
+    <EmbeddedResource Include="Resource\vegetables3.png" />
+    <EmbeddedResource Include="Resource\vegetables4.png" />
+    <EmbeddedResource Include="Resource\vegetables5.png" />
+    <EmbeddedResource Include="Resource\vion.jpg" />
+    <EmbeddedResource Include="Resource\white-shopping-cart-96.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\CategoryDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MyCartPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RecentPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Search.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\StorePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
